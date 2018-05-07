@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang=en>
+
+<head>
+    <title>Portfolio Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="container">
+        <img class="header-image" src="http://res.cloudinary.com/glw20109/image/upload/v1525649946/city-3175068_640.jpg">
+        <div class="title-block">
+            <h1>Gary Williams</h1>
+            <h2>Front End Developer</h2>
+            <img class="logo2" src="http://res.cloudinary.com/glw20109/image/upload/v1525649957/logo2.jpg">
+
+        </div>
+    </header>
+    <section id="main-content">
+        <button id="left-arrow" onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button id="right-arrow" onclick="plusDivs(1)"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="description mySlides">
+
+            <h2 class="description-title">Featured Work - One</h2>
+            <img class="description-image" src="http://lorempixel.com/output/technics-q-c-300-300-9.jpg">
+            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="description mySlides">
+            <h2 class="description-title">Featured Work - Two</h2>
+            <img class="description-image" src="http://lorempixel.com/output/technics-q-c-300-300-3.jpg">
+            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="description mySlides">
+            <h2 class="description-title">Featured Work - Three</h2>
+            <img class="description-image" src="https://placeimg.com/300/300/tech">
+            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+    </section>
+    <footer>
+        <form action="mailto:glw20109@gmail.com" method="post" enctype="text/plain" class="review-form">
+            <h3>Web Site Review</h3>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label>Name: <input type="text" name="name" placeholder="Your Name"></label><br>
+            <label>Email: <input type="email" name="email" placeholder="roadrunner@acme.com" required></label>
+        </fieldset>
+            <fieldset>
+            <legend>Your Review</legend>
+                <label>1.  Overall did you find the website responsive to all of your devices?</label>
+                <input id="yes" type="radio" name="response" value="yes" checked>
+                <label for="yes">Yes</label>
+                <input id="most" type="radio" name="response" value="most">
+                <label for="most">Most</label>
+                <input id="no" type="radio" name="response" value="no">
+                <label for="no">No</label><br>
+                <label>2.  How visually appealing is the website?</label>
+                <input id="very" type="radio" name="visual" value="very" checked>
+                <label for="very">Very appealing</label>
+                <input id="some" type="radio" name="visual" value="some">
+                <label for="some">Somewhat appealing </label>
+                <input id="not" type="radio" name="visual" value="not">
+                <label for="not">Not very appealing</label><br>
+                <label>3.  Do you have any other comments?</label><br>
+                <textarea name="comment" placeholder="Your comments here...."></textarea><br>
+                <input type="submit" value="Submit Review">
+            </fieldset>
+        </form>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        var i;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var slideNumber = document.getElementsByClassName("mySlides");
+            if (n > slideNumber.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slideNumber.length
+            }
+            for (i = 0; i < slideNumber.length; i++) {
+                slideNumber[i].style.display = "none";
+            }
+            slideNumber[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

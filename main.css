@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    width: 100vw;
+    /* border: 1px solid rgb(237, 240, 244); */
+    background-color: rgb(233, 235, 237);
+    /* overflow: auto; */
+}
+
+h1,
+h2 {
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 2.3vw;
+}
+header {
+    width: 100vw;
+}
+
+footer {
+    flex-direction: row;
+    background-color: rgb(195, 190, 190);
+    width: 100vw;
+    margin: 2vw 0;
+    /* align-items:  center; */
+    align-content: center;
+    /* position:  fixed; */
+}
+.container {
+    position: relative;
+}
+
+.title-block {
+    position: absolute;
+    top: 3vw;
+    left: 1vw;
+}
+
+.logo2 {
+    position: absolute;
+    top: 0vw;
+    left: 80vw;
+    width: 12vw;
+    height: auto;
+    z-index: 1;
+}
+header img {
+    margin: 0 auto;
+    width: 100vw;
+    /* padding: 0 8%; */
+    z-index: -1;
+}
+
+.description {
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* align-content: space-between; */
+}
+
+.description-title {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.description-image {
+
+width: 38vw;
+
+float: left;
+
+margin-left: 2vw;
+}
+
+.description-text {
+    width: 43vw;
+    font-size: 2.5vw;
+    line-height: 3.2vw;
+    padding: 1.5vw;
+    float: right;
+    /* margin: 0 0 1vw 0; */
+    /* overflow:  auto; */
+}
+
+#right-arrow {
+
+font-size: 1em;
+
+background: rgba(255, 255, 255, 0.0);
+
+border: none;
+
+color: #f50404;
+
+float: right;
+
+margin-right:  2vw;
+}
+
+#left-arrow {
+
+font-size: 1em;
+
+background: rgba(255, 255, 255, 0.0);
+
+border: none;
+
+color: #f50707;
+
+float: left;
+
+margin-left: 2vw;
+}
+
+#main-content {
+    /* position: relative; */
+    /* margin: 0 auto; */
+    /* align-self:  center; */
+    /* padding: 0px 9%; */
+    /* align-items:  center; */
+    width: 98vw;
+}
+#footer-social-media {
+
+/* align-content: center; */
+
+color: rgb(0,0,255);
+
+margin: 4vw auto;
+}
+.social-media-icon {
+    float: left;
+    font-size: 5vw;
+    color: rgb(0,0,255);
+    padding: 0 .5em;
+    /* margin:  auto; */
+    /* align-content:  center; */
+}
+
+.review-form {
+    width: 60vw;
+    margin: auto;
+}
